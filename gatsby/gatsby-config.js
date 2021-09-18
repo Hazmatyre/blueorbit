@@ -58,6 +58,13 @@ module.exports = {
     //   },
     // },
     {
+      resolve: 'gatsby-background-image-es5',
+      options: {
+        // add your own characters to escape, replacing the default ':/'
+        specialChars: '/:',
+      },
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
@@ -124,7 +131,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-wordpress`,
