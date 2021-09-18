@@ -12,6 +12,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -141,6 +147,10 @@ module.exports = {
          * Example : 'https://www.example-site.com/graphql'
          */
         url: `https://wpgatsbydemo.wpengine.com/graphql`,
+        develop: {
+          hardCacheMediaFiles: true,
+          hardCacheData: true,
+        },
       },
     },
   ],
