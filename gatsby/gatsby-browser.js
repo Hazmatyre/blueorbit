@@ -10,6 +10,10 @@ import "./src/style.css"
 import "prismjs/themes/prism.css"
 import "./src/styles/global.css"
 
+// slick slider
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 // gatsby-background-image
 // ES5 way
 // exports.onClientEntry = () => {
