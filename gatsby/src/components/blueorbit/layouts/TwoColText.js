@@ -3,9 +3,7 @@ import React from 'react'
 import { Heading2, Subtitle } from "../content/typographyStyles"
 import { StyledLink } from "../ui/"
 
-const TwoColText = (data) => {
-    
-	const { textColor } = data
+const TwoColText = () => {
 
 	return(
 		<>

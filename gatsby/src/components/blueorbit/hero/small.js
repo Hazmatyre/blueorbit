@@ -12,8 +12,6 @@ export default function SmallHero( data ) {
         background: linear-gradient(91deg, #0d8bf9, #ec0e73);
     `
 
-    {!data.backgroundColor ? bgColor = 'secondary' : bgColor = data.backgroundColor }
-
 	return(
 		<div>
             <div css={redGradient.styles} sx={{ bg: bgColor }} className="pt-24 hero mx-auto relative">
@@ -21,7 +19,7 @@ export default function SmallHero( data ) {
                     <div className="mx-auto container relative z-20 lg:px-0">
                         <div className="flex lg:flex-row flex-col items-center justify-between">
                             <div className="lg:w-full">
-                                <Heading1 className="mt-4 text-center" sx={{ color: 'white' }}>{data.title}</Heading1>
+                                <Heading1 className="mt-4 text-center" sx={{ color: 'white' }}></Heading1>
                             </div>
                         </div>
                     </div>

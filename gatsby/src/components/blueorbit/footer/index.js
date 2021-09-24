@@ -5,26 +5,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import SocialIcons from "../social"
-import LogoImg from '../../images/logo.svg';
 import FooterContact from './contact'
 
 export default function Footer() {
-	const data = useStaticQuery(graphql`
-		query FooterData {
-		  wpMenu(name: {eq: "Footer1"}) {
-		    menuItems {
-		      nodes {
-		        label
-		        parentId
-		        url
-		        id
-		      }
-		    }
-		  }
-		}
-	`)	
-
-	// const FooterData = FooterData.wpMenu
 
   	return (
   		<div>
@@ -33,9 +16,6 @@ export default function Footer() {
 			        <div className="lg:w-full md:flex-wrap justify-between md:flex">
 			            <div className="mt-0 md:w-1/2 lg:w-1/4 lg:mt-0">
 			                <div>
-			                    <div>
-			                        <img width="193" height="103" alt="PlusGroup Logo" src={LogoImg} />
-			                    </div>
 								<FooterContact />
 			                </div>
 			            </div>

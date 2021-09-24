@@ -9,7 +9,7 @@ const CentredButton = ( data ) => {
 	return(
 		<div>
 			<HalfTopComponentContainer>
-				<Button text={data.buttonText} style={data.buttonStyle} link={data.buttonLink} styles={{ marginLeft: 'auto', marginRight: 'auto' }} />
+				
 			</HalfTopComponentContainer>
 		</div>
 	)
