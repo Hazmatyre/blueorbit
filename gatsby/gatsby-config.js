@@ -12,6 +12,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -49,14 +55,23 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-theme-ui`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
     //     trackingId: `ADD YOUR TRACKING ID HERE`,
     //   },
     // },
+    {
+      resolve: 'gatsby-background-image-es5',
+      options: {
+        // add your own characters to escape, replacing the default ':/'
+        specialChars: '/:',
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -124,6 +139,21 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
+    'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        /*
+         * The full URL of the WordPress site's GraphQL API.
+         * Example : 'https://www.example-site.com/graphql'
+         */
+        url: `http://3.10.227.69/graphql`,
+        develop: {
+          hardCacheMediaFiles: true,
+          hardCacheData: true,
+        },
+      },
+    },
   ],
 }
