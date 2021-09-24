@@ -52,6 +52,7 @@ module.exports = {
     `gatsby-plugin-theme-ui`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
