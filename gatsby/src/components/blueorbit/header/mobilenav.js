@@ -1,7 +1,7 @@
 // https://codesandbox.io/s/infinite-multi-level-menu-react-js-89fmj?file=/src/MultiMenus.js
 import React, { useState, useEffect } from "react";
 
-import LogoImg from '../../images/logo.svg';
+import LogoImg from '../../../images/logo.svg';
 import MobileList from './mobilelist';
 
 import { Link } from "gatsby"

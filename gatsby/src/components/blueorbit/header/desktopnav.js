@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import LogoImg from '../../images/logo.svg';
+import LogoImg from '../../../images/logo.svg';
 import DesktopList from './desktoplist';
 
 import { Link } from "gatsby"
