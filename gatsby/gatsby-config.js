@@ -55,8 +55,10 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-theme-ui`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
@@ -146,7 +148,7 @@ module.exports = {
          * The full URL of the WordPress site's GraphQL API.
          * Example : 'https://www.example-site.com/graphql'
          */
-        url: `https://wpgatsbydemo.wpengine.com/graphql`,
+        url: `http://3.10.227.69/graphql`,
         develop: {
           hardCacheMediaFiles: true,
           hardCacheData: true,
