@@ -87,7 +87,7 @@ const Testimonial = () => {
                         <div className="absolute z-40 bottom-0 right-0 mr-24 md:mb-8 mb-4">
                             <ButtonBack className="focus:outline-none">
                                 <div className="cursor-pointer flex pb-12 focus:outline-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-left" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#CBD5E0" fill="none" strokeLinecap="round" strokeLinejoin="round" onclick="movePrev()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-left" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#CBD5E0" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" />
                                         <polyline points="15 6 9 12 15 18" />
                                     </svg>
@@ -95,7 +95,7 @@ const Testimonial = () => {
                             </ButtonBack>
                             <ButtonNext className="focus:outline-none">
                                 <div className="cursor-pointer flex pb-12 focus:outline-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-right" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#CBD5E0" fill="none" strokeLinecap="round" strokeLinejoin="round" onclick="moveForward()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-right" width={44} height={44} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#CBD5E0" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" />
                                         <polyline points="9 6 15 12 9 18" />
                                     </svg>
